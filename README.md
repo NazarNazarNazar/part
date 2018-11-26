@@ -14,7 +14,7 @@ To run this sample :
 
 6. run /resources/populateDB.sql script to populate db with some data;
 
-7. set your tomcat 8
+7. set your tomcat 8 with "part: war exploded" as an artifact
 
 7. build project with maven: $ mvn clean install;
 
