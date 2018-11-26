@@ -2,14 +2,14 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <html>
 <head>
-    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Part</title>
     <link rel="stylesheet" href="${pageContext.request.contextPath}/resources/css/style.css" type="text/css"/>
     <script type="text/javascript" src="resources/js/script.js"></script>
 
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
-    <script src="http://code.jquery.com/jquery-1.12.4.js"></script>
-    <script src="http://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script type="text/javascript" src="resources/js/jquery-1.12.4.js"></script>
+    <script type="text/javascript" src="resources/js/jquery-ui.js"></script>
     <script>
         $(document).ready(function () {
             $(".myDateInput").datepicker({
@@ -18,7 +18,7 @@
                 beforeShow: function (input, inst) {
                     setTimeout(function () {
                         inst.dpDiv.css({
-                            top: $(".myDateInput").offset().top + 50
+                            top: $(".myDateInput").offset().top + 60
                         });
                     }, 0);
                 }

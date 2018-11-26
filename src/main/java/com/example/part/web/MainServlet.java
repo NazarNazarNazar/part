@@ -9,15 +9,15 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-
 import java.sql.SQLException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 
 public class MainServlet extends HttpServlet {
-    private final static SimpleDateFormat SDF = new SimpleDateFormat("MMM dd, yyyy");
+    private final static SimpleDateFormat SDF = new SimpleDateFormat("MMM dd, yyyy", Locale.ENGLISH);
 
     private PartRepository repository;
 
@@ -30,6 +30,7 @@ public class MainServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         req.setCharacterEncoding("UTF-8");
+        resp.setCharacterEncoding("UTF-8");
 
         String action = req.getParameter("action");
         List<Part> parts = null;
@@ -63,6 +64,9 @@ public class MainServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        req.setCharacterEncoding("UTF-8");
+        resp.setCharacterEncoding("UTF-8");
+
         List<Part> parts = null;
         try {
             parts = repository.getPart();

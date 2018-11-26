@@ -14,8 +14,10 @@ To run this sample :
 
 6. run /resources/populateDB.sql script to populate db with some data;
 
+7. set your tomcat 8
+
 7. build project with maven: $ mvn clean install;
 
 8. run application using tomcat 8
 
-9. in browser open: http://localhost:8080/part
+9. in browser open: http://localhost:8080
