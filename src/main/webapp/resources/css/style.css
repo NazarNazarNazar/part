@@ -1,0 +1,69 @@
+table {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif, serif;
+    font-size: 14px;
+    background: white;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th {
+    font-weight: normal;
+    padding: 4px 4px;
+    background: darkgrey;
+}
+
+td {
+    padding: 4px 4px;
+    transition: .3s linear;
+}
+
+.submission-form {
+    max-width: 100%;
+    border: 1px slategray;
+    font-size: 14px;
+    border-collapse: collapse;
+}
+
+#title {
+    font-weight: normal;
+    padding: 4px 4px;
+    background: darkgrey;
+}
+
+dl {
+    background: none repeat scroll 0 0 #FAFAFA;
+    margin: 0 0;
+    padding: 2px 2px;
+    border-bottom: 1px dotted slategray;
+    border-left: 1px solid slategray;
+    border-right: 1px solid slategray;
+    transition: .3s linear;
+}
+
+dt {
+    display: inline-block;
+    width: 170px;
+}
+
+dd {
+    display: inline-block;
+    margin-left: 4px;
+    vertical-align: top;
+}
+
+input {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif, serif;
+    font-size: 14px;
+    background: #FAFAFA;
+    color: black;
+}
+
+#filter {
+    text-align: center;
+    margin-top: 5px;
+}
+
+input[type=date]::-webkit-inner-spin-button, input[type=date]::-webkit-calendar-picker-indicator {
+    display: none;
+}
