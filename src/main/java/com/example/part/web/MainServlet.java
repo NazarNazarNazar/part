@@ -17,7 +17,7 @@ import java.util.List;
 import java.util.Locale;
 
 public class MainServlet extends HttpServlet {
-    private final static SimpleDateFormat SDF = new SimpleDateFormat("MMM dd, yyyy", Locale.ENGLISH);
+    private SimpleDateFormat SDF = new SimpleDateFormat("MMM dd, yyyy", Locale.ENGLISH);
 
     private PartRepository repository;
 
