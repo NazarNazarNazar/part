@@ -16,6 +16,13 @@ import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
+    /*
+    Отсутствие комментариев JavaDoc.
+    Странный запрос SQL-пачка подзапросов с использованием оператора"INTERSECT".Чем не устраивает сборка через StringBuilder и операторов"AND"и/или"OR"в зависимости от присутствия условий выборки?
+    Некорректная работа с подключением.Следует заворачивать код в try-finally,либо try-with-resources.
+    Для обработки времени используется статическое поле с типом SimpleDateFormat.Это может привести к некорретным значениям даты при одновременной работы более 1-го пользователя.
+    Глушение потенциальных исключений через"e.printStackTrace()".Пользователь не узнает о возникшей ошибке.
+*/
 public class MainServlet extends HttpServlet {
     private SimpleDateFormat SDF = new SimpleDateFormat("MMM dd, yyyy", Locale.ENGLISH);
 
